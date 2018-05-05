@@ -1,0 +1,545 @@
+@media only screen and (max-width: 500px) {
+    
+
+h1{
+	text-align: center;
+}
+
+.kalenderMeny{
+	display: flex;
+	justify-content: center;
+
+}
+#månedbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-content: space-around;
+	min-width:364px;
+	background-color: steelblue;
+	color: white;
+	align-items: center;
+}
+
+#valgtMånedContainer{
+	font-size:14pt;
+}
+#tilbake:hover{
+	text-decoration: underline;
+	font-size: 14pt;
+}
+#tilbake{
+	cursor:pointer;
+}
+
+#frem:hover{
+	text-decoration: underline;
+	font-size: 14pt;
+}
+#frem{
+	cursor:pointer;
+}
+
+#kalender {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+}
+
+#dagbar {
+	display: flex;
+	flex-direction: row;
+	background-color: lightblue;
+	
+}
+.dag{
+	height: 50px;
+	width:  52px;
+	display: flex;
+	justify-content: center;
+
+	
+}
+.ukeClass {
+	height: 50px;
+	width:  50px;
+	display: flex;
+	justify-content: center;
+	border: solid black 1px;
+}
+
+.ukedagcont{
+	display: flex;
+	flex-direction: row;
+	
+
+}
+.datobox{
+	width: 50px;
+	height:50px;
+	border: solid black 1px;
+	text-align: center;
+	cursor:pointer;
+}
+.datobox:hover{
+	border: solid blue 1px;
+	font-size: 13pt;
+}
+.unclickable{
+	width: 50px;
+	height:50px;
+	border: solid black 1px;
+	text-align: center;
+	background-color: whitesmoke;
+}
+.today{
+	width: 50px;
+	height:50px;
+	border: solid blue 1px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#datogrid{
+	display: flex;
+	flex-wrap: wrap;
+	width:364px;
+}
+
+#bookingtabell{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+#timecontain{	
+	display: flex;
+	justify-content: center;
+	
+	
+}
+
+#bookingcontain{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width:100%;
+}
+.time{
+	
+	flex:2;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.bookinglomme{
+	border: solid black 1px;
+	height: 65px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	min-width: 364px;	
+
+}
+.booketNår{
+	flex:1;
+	text-align: center;
+}
+.status{
+	flex:3;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.ledig{
+	flex:1;
+	text-align: center;
+	margin-right: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.timetekst{
+	margin:0;
+}
+.bookknapp{
+	background-color: green;
+	padding-top:7px;
+	padding-bottom: 7px;
+	padding-left: 25px;
+	padding-right: 25px;
+	color:white;
+	cursor:pointer;
+}
+
+
+.bookknapp:hover{
+	box-shadow:5px 5px 12px grey;
+	
+}
+}
+@media only screen and (max-width: 768px) {
+h1{
+	text-align: center;
+}
+
+.kalenderMeny{
+	display: flex;
+	justify-content: center;
+
+}
+#månedbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-content: space-around;
+	min-width:364px;
+	background-color: steelblue;
+	color: white;
+	align-items: center;
+}
+
+#valgtMånedContainer{
+	font-size:14pt;
+}
+#tilbake:hover{
+	text-decoration: underline;
+	font-size: 14pt;
+}
+#tilbake{
+	cursor:pointer;
+}
+
+#frem:hover{
+	text-decoration: underline;
+	font-size: 14pt;
+}
+#frem{
+	cursor:pointer;
+}
+
+#kalender {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+}
+
+#dagbar {
+	display: flex;
+	flex-direction: row;
+	background-color: lightblue;
+	
+}
+.dag{
+	height: 50px;
+	width:  52px;
+	display: flex;
+	justify-content: center;
+	
+}
+.ukeClass {
+	height: 50px;
+	width:  50px;
+	display: flex;
+	justify-content: center;
+	border: solid black 1px;
+}
+
+.ukedagcont{
+	display: flex;
+	flex-direction: row;
+	
+
+}
+.datobox{
+	width: 50px;
+	height:50px;
+	border: solid black 1px;
+	text-align: center;
+	cursor:pointer;
+}
+.datobox:hover{
+	border: solid blue 1px;
+	font-size: 13pt;
+}
+.unclickable{
+	width: 50px;
+	height:50px;
+	border: solid black 1px;
+	text-align: center;
+	background-color: whitesmoke;
+}
+.today{
+	width: 50px;
+	height:50px;
+	border: solid blue 1px;
+	text-align: center;
+	cursor:pointer;
+}
+
+#datogrid{
+	display: flex;
+	flex-wrap: wrap;
+	width:364px;
+}
+
+#bookingtabell{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+#timecontain{	
+	display: flex;
+	justify-content: center;
+	
+	
+}
+
+#bookingcontain{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width:100%;
+}
+.time{
+	
+	flex:2;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.bookinglomme{
+	border: solid black 1px;
+	height: 65px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	min-width: 364px;	
+
+}
+.booketNår{
+	flex:1;
+	text-align: center;
+}
+.status{
+	flex:3;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.ledig{
+	flex:1;
+	text-align: center;
+	margin-right: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.timetekst{
+	margin:0;
+}
+.bookknapp{
+	background-color: green;
+	padding-top:7px;
+	padding-bottom: 7px;
+	padding-left: 25px;
+	padding-right: 25px;
+	color:white;
+	cursor:pointer;
+}
+.bookknapp:hover{
+	box-shadow:5px 5px 12px grey;
+}
+
+
+
+
+}
+
+@media only screen and (min-width: 768px) {
+	#alt{
+	width: 80%; margin: 0 auto;
+}
+	h1{
+	text-align: center;
+}
+
+.kalenderMeny{
+	display: flex;
+	justify-content: center;
+
+}
+#månedbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-content: space-around;
+	min-width:364px;
+	background-color: steelblue;
+	color: white;
+	align-items: center;
+}
+
+#valgtMånedContainer{
+	font-size:14pt;
+}
+#tilbake:hover{
+	text-decoration: underline;
+	font-size: 14pt;
+
+}
+#tilbake{
+	cursor:pointer;
+}
+
+#frem:hover{
+	text-decoration: underline;
+	font-size: 14pt;
+}
+
+#frem{
+	cursor:pointer;
+}
+
+#kalender {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+}
+
+#dagbar {
+	display: flex;
+	flex-direction: row;
+	background-color: lightblue;
+	
+}
+.dag{
+	height: 50px;
+	width:  52px;
+	display: flex;
+	justify-content: center;
+	
+}
+.ukeClass {
+	height: 50px;
+	width:  50px;
+	display: flex;
+	justify-content: center;
+	border: solid black 1px;
+}
+
+.ukedagcont{
+	display: flex;
+	flex-direction: row;
+	
+
+}
+.datobox{
+	width: 50px;
+	height:50px;
+	border: solid black 1px;
+	text-align: center;
+	cursor:pointer;
+}
+.datobox:hover{
+	border: solid blue 1px;
+	font-size: 13pt;
+}
+.unclickable{
+	width: 50px;
+	height:50px;
+	border: solid black 1px;
+	text-align: center;
+	background-color: whitesmoke;
+}
+.today{
+	width: 50px;
+	height:50px;
+	border: solid blue 1px;
+	text-align: center;
+	cursor:pointer;
+}
+
+#datogrid{
+	display: flex;
+	flex-wrap: wrap;
+	width:364px;
+}
+
+#bookingtabell{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+#bookingcontain{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width:100%;
+}
+
+.time{	
+	flex:1;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.bookinglomme{
+	border: solid black 1px;
+	height: 65px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	min-width: 364px;	
+}
+.booketNår{
+	flex:1;
+	text-align: center;
+}
+.status{
+	flex:3;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.ledig{
+	flex:1;
+	text-align: center;
+	margin-right: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.timetekst{
+	margin:0;
+}
+.bookknapp{
+	background-color: green;
+	padding-top:7px;
+	padding-bottom: 7px;
+	padding-left: 25px;
+	padding-right: 25px;
+	color:white;
+	cursor:pointer;
+}
+.bookknapp:hover{
+	box-shadow:5px 5px 12px grey;
+}
+}

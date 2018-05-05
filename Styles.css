@@ -1,0 +1,42 @@
+ body {
+
+	    background: linear-gradient(to right, #f2f7ff, #aeb7c4);
+	    line-height: 1.5;
+	  
+ }
+
+
+h1{
+   font-family: "Verdana", Arial, Helvetica, sans-serif;
+}
+
+h2{     
+font-family: "Verdana", Arial, Helvetica, sans-serif;
+text-align: center;
+ }
+
+
+button { 
+ 	background-color: #008000;
+ 	border:1px solid green;
+	border-radius: .25rem;
+ 	color: white;
+ 	padding: 15px 32px;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	display: inline-block;
+ 	font-size: 16px;
+ 	margin: 4px 2px;
+ 	cursor: pointer;
+ 	font-size: 25px;
+ 	width: 100%;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width:100%;
+}
+
+

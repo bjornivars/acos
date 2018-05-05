@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book place</title>
+    <meta name="viewport" content="width=device-width"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous" defer></script>
+    
+
+    <link rel="stylesheet" type="text/css" href="kalender.css">
+    <script type="text/javascript" src="kalender.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="product-info.js" defer></script>
+    <script src="validation-form.js" defer></script>
+    <script src="buttons.js" defer></script>
+
+</head>
+
+
+
+
+
+<body onload="currentMonth()" defer>
+
+
+<nav class="navbar navbar-light">
+    <a class="navbar-brand" href="index.html">
+        <img src="logo.svg" width="400px" height="70px" class="d-inline-block align-top img-fluid" alt="">
+    </a>
+    <button><a href="readme1.pdf" target="_blank"> Bruksanvisning</a></button>
+</nav>
+
+
+
+
+<div class="container mobile-center">
+
+
+    <a class="a-margin" href="index.html"> <i class="fas fa-arrow-left"></i>Tilbake til "Selskapslokaler"</a>
+
+
+
+
+    <!-- Nav tabs -->
+    <div class="row">
+        <ul class="nav nav-tabs justify-content-around" id="mytabs" role="tablist">
+            <li class="li-style-tab-product col-sm-4 col-md-4 ">
+                <a href="#first" role="tab" data-toggle="tab" class="activeTab">
+
+                    <icon class="fa fa-home"></icon> Selskapslokale
+                </a>
+            </li>
+
+            <li class="li-style-tab-product col-sm-4 col-md-4"><a href="#second" role="tab" data-toggle="tab">
+                <i class="fa fa-user"></i> Book lokale
+            </a>
+            </li>
+            <li  class="li-style-tab-product col-sm-4 col-md-4">
+                <a href="#third" role="tab" data-toggle="tab">
+                    <i class="fas fa-registered"></i> Registrering
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <!-- Tab panes -->
+
+    <div class="tab-content">
+
+
+        <!-- JOBB FRA HER -->
+        <div class="tab-pane fade in show active" id="first">
+            <div id="testing-content">
+
+                <div class="row">
+                    <h2 class="col-md-12 verdana" id="hovednavn" style="margin-bottom: 0.5em; margin-top: 0.5em"> Laster tilbud</h2>
+
+                    <div class="col-md-6 col-xs-12">
+                        <img id="logoImg" class="img-size" src="https://www.happyceliac.com/wp-content/uploads/2018/02/placeholder-image.png" alt="bilde">
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h3 class="verdana">Nøkkelinformasjon: </h3>
+                        <p><strong>Åpningstider: </strong><br><span id="opening">Laster <br> Laster <br> Laster </span></p>
+                        <p><strong>Besøksadresse:</strong><br><span id="adresse"> Laster </span></p>
+                        <p class="verdana"><strong>Pris:</strong><br><span id="pris"> Ca. 1000</span> kr</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 btn-div">
+                        <button type="button" id="changetabbutton2" class="btn btn-primary">Book <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="row row-border">
+                    <div class="col-md-6 col-xs-12">
+                        <h4 class="verdana">Innledning</h4>
+                        <p id="innledning">Rådmannen har det overordnede ansvar for utleie av Kråkstad samfunnshus.</p>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h4 class="verdana">Kontaktinformasjon</h4>
+                        <p>Har du spesielle behov, ønsker omvisning eller har andre spørsmål, ta kontakt med utleier.</p>
+                        <ul>
+                            <li id="navn">Tilsynsvakt</li>
+                            <li id="telefon">Telefon: 50505050</li>
+                            <li id="epost">E-post: </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <h4 class="verdana">Hvem kan leie?</h4>
+                        <p id="info">Foreninger, organisasjoner og institusjoner med et klart kulturelt, humanitært miljøskapende eller politisk formål, samt kommunens egen virksomhet har anledning til å leie lokaler i kommunens bygg. Foreninger, organisasjoner og institusjoner i Ski kommune prioriteres.
+                            Ski kommune åpner for fast leie av Kråkstad samfunnshus, men må vike ved arrangementer/tradisjonelle aktiviteter.
+                            Lokalene kan etter søknad benyttes til private arrangementer.</p>
+
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h4 class="margin-top verdana"> Kart </h4>
+                        <p class="lead"> Her finner du oss</p>
+                        <div id="map" style="width:100%;height:400px;background:yellow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- STOPP JOBB HER -->
+
+
+        <script>
+            var myMap;
+            function startkart() {
+                var myLatLng = {lat: 60.347210, lng: 5.134619};
+
+                myMap = new google.maps.Map(document.getElementById('map'),
+                    {
+                        zoom: 12,
+                        center: myLatLng
+                    }
+                );
+
+            }
+        </script>
+        <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALHCGvU10mij95gYgxCq6Dpxgm0JjK1jw&callback=startkart"></script>
+
+
+
+
+
+        <div class="tab-pane fade" id="second">
+            <h2 class="h2-margin text-center">Velg dato i kalenderen, og velg klokkeslett for booking.</h2>
+            <div id="alt">
+                <h1 id="valgtTjeneste">Valgt Tjeneste</h1>
+                <div class="kalenderMeny">
+                    <div id="månedbar">
+                        <div id="tilbake">
+                            <p onclick="prevMonth()">Tilbake</p>
+                        </div>
+                        <div id="valgtMånedContainer">
+                            <p id="valgtMåned"></p>
+                        </div>
+                        <div id="frem">
+                            <p onclick="nextMonth()">Frem</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="kalender">
+
+                    <div>
+                        <div id="dagbar">
+                            <div class="dag" id="mandag">
+                                <p>M</p>
+                            </div>
+                            <div class="dag" id="tirsdag">
+                                <p>T</p>
+                            </div>
+                            <div class="dag" id="onsdag">
+                                <p>O</p>
+                            </div>
+                            <div class="dag" id="tordag">
+                                <p>T</p>
+                            </div>
+                            <div class="dag" id="fredag">
+                                <p>F</p>
+                            </div>
+                            <div class="dag" id="lørdag">
+                                <p>L</p>
+                            </div>
+
+                            <div class="dag" id="søndag">
+                                <p>S</p>
+                            </div>
+                        </div>
+                        <div id="datogrid">
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+
+                <div id="bookingcontain">
+
+                </div>
+
+
+                
+                <p data-target="#third" data-toggle="tab" id="changetabbutton3" onclick="supertest(this.id)" class="bookknapp" style="display: none; border: solid 1px transparent; border-radius: .25rem;"> Book</p>
+
+                <p data-target="#third" data-toggle="tab" id="changetabbutton4" onclick="supertest(this.id)" class="bookknapp" style="display: none; border: solid 1px transparent; border-radius: .25rem;"> Book</p>
+
+                <p data-target="#third" data-toggle="tab" id="changetabbutton5" onclick="supertest(this.id)" class="bookknapp" style="display: none; border: solid 1px transparent; border-radius: .25rem;"> Book</p>
+
+                <p data-target="#third" data-toggle="tab" id="changetabbutton6" onclick="supertest(this.id)" class="bookknapp" style="display: none; border: solid 1px transparent; border-radius: .25rem;"> Book</p>
+                
+                
+
+            </div>
+            <button type="button" id="backtabbutton1" class="btn btn-secondary"><i class="fas fa-arrow-left"></i>Tilbake</button>
+        </div>
+
+         <div class="tab-pane fade" id="third">
+
+
+            <form class="form formkontakt" name="test" action="order-completed.html" onsubmit="return validateForm()">
+                <h2 class="h2-margin"> Oversikt</h2>
+
+                <div class="form-group input-group">
+                    <div class="col-md-12 row-border">
+
+                        <span id="typeOrder">Navn</span><br>
+                        <span id="datoOrder">Dato</span><br>
+                        <span id="tidOrder">Klokken</span>
+                    </div>
+                    <h2 class="h2-margin"> Registrering</h2>
+
+                    <div class="col-md-3 col-sm-6">
+                       <input name="Lokale" class="form-control date-input ghost" id="ghostName" placeholder="Navn">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <input name="Dato" class="form-control date-input ghost" id="ghostDate" placeholder="Dato: ">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <input name="Klokkeslett" class="form-control date-input ghost" id="ghostTime" placeholder="Tid: ">
+                    </div>
+
+                    <div class="col-md-6 radio-input">
+                        <input type="radio" name="gender" value="male"> Privat</div>
+                    <div class="col-md-6 radio-input">
+                        <input type="radio" name="gender" value="female"> Organisasjon<br>
+                    </div>
+
+                    <div class="col-md-6 col-sm-10">
+                        <input name="firstName" class="form-control date-input" id="firstName" placeholder="Fornavn">
+                        <span class="error" id="firstNameError"></span>
+                    </div>
+                    <div class="col-md-6 col-sm-10">
+                        <input name="lastName" class="form-control date-input" id="lastName"  placeholder="Etternavn">
+                        <span class="error" id="lastNameError"></span>
+                    </div>
+
+                    <div class="col-md-6 col-sm-10">
+                        <input name="email" class="form-control date-input" id="email" placeholder="E-post">
+                        <span class="error" id="emailError"></span>
+                    </div>
+
+                    <div class="col-md-6 col-sm-10">
+                        <input name="phone" class="form-control date-input" id="phone" placeholder="Telefon">
+                        <span class="error" id="phoneError"></span>
+                    </div>
+
+                    <div class="col-md-6 col-sm-10">
+                        <input name="address" class="form-control date-input" id="address" placeholder="Adresse">
+                        <span class="error" id="addressError"></span>
+                    </div>
+
+                    <div class="col-md-6 col-sm-10">
+                        <input name="post" class="form-control date-input" id="post" placeholder="Postnummer/sted">
+                        <span class="error" id="postalError"></span>
+                    </div>
+
+                    <div class="col-md-6 radio-input"> <input type="radio" name="something" value="male"> Bruk som fakturaadresse
+                    </div>
+                    <div class="col-md-6 radio-input"> <input type="radio" name="something" value="female"> Legg til fakturaadresse</div><br>
+
+                    <div class="col-md-6 col-sm-10">
+                        <input class="form-control date-input" id="#"  placeholder="Lokalet skal benyttes til">
+                    </div>
+
+                    <div class="col-md-12">
+                        <input type="checkbox" name="checkbox" value="check"  />Jeg har lest leiebetingelsene
+                    </div>
+
+                    <br>
+
+                    <input type="submit" value="Send" class="submit-style" onclick="if(!this.form.checkbox.checked){alert('You must agree to the terms first.');return false}">
+                    <div class="col-md-12">
+                        <p>Fyll ut alle feltene for å aktivere "Send"knappen</p>
+                    </div>
+                </div>
+            </form>
+
+            <button type="button" id="backtabbutton2" class="btn btn-secondary"><i class="fas fa-arrow-left"></i>Tilbake</button>
+
+
+
+
+
+        </div>
+
+    </div> <!-- Tab content -->
+
+
+
+</div> <!-- container -->
+
+<nav class="navbar navbar-light">
+    <a class="navbar-brand" href="#">
+        <img src="logo.svg" width="400px" height="70px" class="d-inline-block align-top img-fluid" alt="ACOS logo">
+    </a>
+</nav>
+<a href="../acos.html">Back to portfolio</a>
+
+
+
+</body>
+</html>
