@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Order Complete</title>
+    <meta name="viewport" content="width=device-width"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="kvittering.js" defer></script>
     <link rel="stylesheet" type="text/css" href="Styles.css">
 
 </head>
@@ -15,27 +24,68 @@
         <img src="logo.svg" width="400px" height="70px" class="d-inline-block align-top img-fluid" alt="">
     </a>
 </nav>
-<div class="container">
-
-<h1 style="font-size: 40px; text-align: center;"> Takk for bestillingen din</h1>
-
-<div style="max-width: 500px; justify-content: center; margin:0 auto;">
-<img src="bestillt3.png" class="img-fluid" style="width:100%">
-</div>
-<h2 style="font-size: 25px"> Ordren din er mottatt og blir nå behandlet. Sjekk mail for bekreftelse. </h2>
 
 
-<a href="index.html"> <button type="button" id="" class="btn btn-primary">Hjem</button></a>
-</div> <!-- container --> 
+    <div class="container mobile-center">
 
 
-<nav class="navbar navbar-light">
-    <a class="navbar-brand" href="index.html">
-        <img src="logo.svg" width="400px" height="70px" class="d-inline-block align-top img-fluid" alt="">
-    </a>
-</nav>
-<a href="../acos.html">Back to portfolio</a>
+        <a class="a-margin" href="index.html"> <i class="fas fa-arrow-left"></i>Tilbake til "Selskapslokaler"</a>
 
+
+
+
+        <!-- Nav tabs -->
+        <div class="row">
+            <ul class="nav nav-tabs justify-content-around" id="mytabs" role="tablist">
+                <li class="li-style-tab-product col-sm-3 col-md-3 ">
+                    <a href="#" id="tab1" class="tab btn disabled" onclick="goToStep(1)">
+                        <icon class="fa fa-home"></icon> Selskapslokale
+                    </a>
+                </li>
+
+                <li class="li-style-tab-product col-sm-3 col-md-3">
+                    <a href="#" id="tab2" class="tab btn disabled" onclick="goToStep(2)">
+                        <i class="fa fa-user"></i> Book lokale
+                    </a>
+                </li>
+                <li  class="li-style-tab-product col-sm-3 col-md-3">
+                    <a href="#" id="tab3" class="tab btn disabled" onclick="goToStep(3)">
+                        <i class="fas fa-registered"></i> Registrering
+                    </a>
+                </li>
+
+                <li  class="li-style-tab-product col-sm-3 col-md-3">
+                    <a href="#" id="tab4" class="tab btn activeTab" onclick="goToStep(4)">
+                        <i class="fas fa-registered"></i> Kvittering
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <div class="tab-content " id="fourth">
+                <h2 class="h2-margin text-center">Kvittering</h2>
+                    <ul id="infoKvitt">
+
+                    </ul>
+
+
+
+
+
+                <h3 style="font-size: 40px; text-align: center;"> Takk for bestillingen din</h3>
+
+                <div style="max-width: 500px; justify-content: center; margin:0 auto;">
+                    <img src="bestillt3.png" class="img-fluid" style="width:100%">
+                </div>
+                <h2 style="font-size: 25px"> Ordren din er mottatt og blir nå behandlet. Sjekk mail for bekreftelse. </h2>
+
+
+                <a href="index.html"> <button type="button" id="" class="btn btn-primary">Hjem</button></a>
+            </div> <!-- container -->
+
+        </div>
+    </div>
 
 </body>
 </html>

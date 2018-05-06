@@ -75,9 +75,11 @@ a.active.show{
     margin-bottom: 1em;
 }
 
-.activeTab{
+.activeTab, .activeTab:hover{
     color: green;
-    text-decoration: none;}
+    text-decoration: none;
+}
+
 
 .disabled{
     color: grey;

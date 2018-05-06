@@ -269,4 +269,6 @@ function supertest(clicked_id){
 	var spanTime = document.getElementById("tidOrder");
 	spanDate.innerHTML = "Dato: " + chosenDate.innerHTML;
 	spanTime.innerHTML = "Klokken: " + tmpTid;
+	nextStep(3);
 }
+

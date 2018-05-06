@@ -13,7 +13,7 @@
     
 
     <link rel="stylesheet" type="text/css" href="kalender.css">
-  <!--  <script type="text/javascript" src="kalender.js"></script>  -->
+    <script type="text/javascript" src="kalender.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="product-info.js" defer></script>
     <script src="validation-form.js" defer></script>
@@ -24,7 +24,7 @@
 
 
 
-<body <!--onload="currentMonth()" defer -->>
+<body onload="currentMonth()" >
 
 
 <nav class="navbar navbar-light">
@@ -48,20 +48,26 @@
     <!-- Nav tabs -->
     <div class="row">
         <ul class="nav nav-tabs justify-content-around" id="mytabs" role="tablist">
-            <li class="li-style-tab-product col-sm-4 col-md-4 ">
+            <li class="li-style-tab-product col-sm-3 col-md-3 ">
                 <a href="#" id="tab1" class="tab btn activeTab" onclick="goToStep(1)">
                     <icon class="fa fa-home"></icon> Selskapslokale
                 </a>
             </li>
 
-            <li class="li-style-tab-product col-sm-4 col-md-4">
-                <a href="#" id="tab2" class="tab btn " onclick="goToStep(2)">
+            <li class="li-style-tab-product col-sm-3 col-md-3">
+                <a href="#" id="tab2" class="tab btn disabled" onclick="goToStep(2)">
                     <i class="fa fa-user"></i> Book lokale
                 </a>
             </li>
-            <li  class="li-style-tab-product col-sm-4 col-md-4">
-                <a href="#" id="tab3" class="tab btn " onclick="goToStep(3)">
+            <li  class="li-style-tab-product col-sm-3 col-md-3">
+                <a href="#" id="tab3" class="tab btn disabled" onclick="goToStep(3)">
                     <i class="fas fa-registered"></i> Registrering
+                </a>
+            </li>
+
+            <li  class="li-style-tab-product col-sm-3 col-md-3">
+                <a href="#" id="tab3" class="tab btn disabled" onclick="goToStep(4)">
+                    <i class="fas fa-registered"></i> Kvittering
                 </a>
             </li>
 
@@ -91,7 +97,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 btn-div">
-                        <button type="button" id="" class="btn btn-primary">Book <i class="fas fa-arrow-right"></i></button>
+                        <button type="button" id="" class="btn btn-primary" onclick="nextStep(2)">Book <i class="fas fa-arrow-right"></i></button>
                     </div>
                 </div>
 
@@ -219,13 +225,14 @@
                 
 
             </div>
-            <button type="button" id="backtabbutton1" class="btn btn-secondary"><i class="fas fa-arrow-left"></i>Tilbake</button>
+            <button type="button" id="backtabbutton1" class="btn btn-secondary" onclick="goToStep(1)"><i class="fas fa-arrow-left"></i>Tilbake</button>
+
         </div>
 
          <div class="tab-content d-none" id="third">
 
 
-            <form class="form formkontakt" name="test" action="order-completed.html" onsubmit="return validateForm()">
+            <form class="form formkontakt" name="test" action="order-completed.html#" onsubmit="return validateForm()">
                 <h2 class="h2-margin"> Oversikt</h2>
 
                 <div class="form-group input-group">
@@ -278,13 +285,13 @@
                     </div>
 
                     <div class="col-md-6 col-sm-10">
-                        <input name="post" class="form-control date-input" id="post" placeholder="Postnummer/sted">
+                        <input name="post" class="form-control date-input" id="post" placeholder="Postnummer">
                         <span class="error" id="postalError"></span>
                     </div>
 
-                    <div class="col-md-6 radio-input"> <input type="radio" name="something" value="male"> Bruk som fakturaadresse
+                    <div class="col-md-6 radio-input"> <input type="radio" name="faktura" value="ja"> Bruk som fakturaadresse
                     </div>
-                    <div class="col-md-6 radio-input"> <input type="radio" name="something" value="female"> Legg til fakturaadresse</div><br>
+                    <div class="col-md-6 radio-input"> <input type="radio" name="faktura" value="nei"> Legg til fakturaadresse</div><br>
 
                     <div class="col-md-6 col-sm-10">
                         <input class="form-control date-input" id="#"  placeholder="Lokalet skal benyttes til">
@@ -303,13 +310,20 @@
                 </div>
             </form>
 
-            <button type="button" id="backtabbutton2" class="btn btn-secondary"><i class="fas fa-arrow-left"></i>Tilbake</button>
-
-
-
-
+            <button type="button" id="backtabbutton2" class="btn btn-secondary" onclick="goToStep(2)"><i class="fas fa-arrow-left"></i>Tilbake</button>
 
         </div>
+
+
+        <div class="tab-content d-none" id="second">
+            <h2 class="h2-margin text-center">Kvittering</h2>
+
+
+            <button type="button" id="backtabbutton1" class="btn btn-secondary" onclick="goToStep(3)"><i class="fas fa-arrow-left"></i>Tilbake</button>
+            <button type="button" id="ssosoos" class="btn btn-secondary" onclick="goToStep(3)"><i class="fas fa-arrow-left"></i>Neste</button>
+
+        </div>
+
 
     </div> <!-- Tab content -->
 

@@ -77,10 +77,12 @@ var step = 1;
 var progress = 1;
 
 
-function nextStep() {
-    progress++;
+function nextStep(next) {
+    progress = next;
+    goToStep(progress);
     console.log(progress);
 }
+
 
 function goToStep(step) {
     switch (step){
@@ -88,11 +90,14 @@ function goToStep(step) {
             document.getElementById("first").classList.remove("d-none");
             document.getElementById("second").classList.add("d-none");
             document.getElementById("third").classList.add("d-none");
+            document.getElementById("fourth").classList.add("d-none");
             // console.log("kjøres?");
 
             document.getElementById("tab1").classList.add("activeTab");
             document.getElementById("tab2").classList.remove("activeTab");
             document.getElementById("tab3").classList.remove("activeTab");
+            document.getElementById("tab4").classList.remove("activeTab");
+
 
             break;
         case 2:
@@ -104,6 +109,7 @@ function goToStep(step) {
             document.getElementById("tab2").classList.add("activeTab");
             document.getElementById("tab3").classList.remove("activeTab");
 
+            document.getElementById("tab2").classList.remove("disabled");
             break;
         case 3:
             document.getElementById("first").classList.add("d-none");
@@ -113,6 +119,8 @@ function goToStep(step) {
             document.getElementById("tab1").classList.remove("activeTab");
             document.getElementById("tab2").classList.remove("activeTab");
             document.getElementById("tab3").classList.add("activeTab");
+
+            document.getElementById("tab3").classList.remove("disabled");
             break
     }
 }
