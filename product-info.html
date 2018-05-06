@@ -13,11 +13,10 @@
     
 
     <link rel="stylesheet" type="text/css" href="kalender.css">
-    <script type="text/javascript" src="kalender.js"></script>
+  <!--  <script type="text/javascript" src="kalender.js"></script>  -->
     <link rel="stylesheet" href="style.css">
     <script src="product-info.js" defer></script>
     <script src="validation-form.js" defer></script>
-    <script src="buttons.js" defer></script>
 
 </head>
 
@@ -25,7 +24,7 @@
 
 
 
-<body onload="currentMonth()" defer>
+<body <!--onload="currentMonth()" defer -->>
 
 
 <nav class="navbar navbar-light">
@@ -50,18 +49,18 @@
     <div class="row">
         <ul class="nav nav-tabs justify-content-around" id="mytabs" role="tablist">
             <li class="li-style-tab-product col-sm-4 col-md-4 ">
-                <a href="#first" role="tab" data-toggle="tab" class="activeTab">
-
+                <a href="#" id="tab1" class="tab btn activeTab" onclick="goToStep(1)">
                     <icon class="fa fa-home"></icon> Selskapslokale
                 </a>
             </li>
 
-            <li class="li-style-tab-product col-sm-4 col-md-4"><a href="#second" role="tab" data-toggle="tab">
-                <i class="fa fa-user"></i> Book lokale
-            </a>
+            <li class="li-style-tab-product col-sm-4 col-md-4">
+                <a href="#" id="tab2" class="tab btn " onclick="goToStep(2)">
+                    <i class="fa fa-user"></i> Book lokale
+                </a>
             </li>
             <li  class="li-style-tab-product col-sm-4 col-md-4">
-                <a href="#third" role="tab" data-toggle="tab">
+                <a href="#" id="tab3" class="tab btn " onclick="goToStep(3)">
                     <i class="fas fa-registered"></i> Registrering
                 </a>
             </li>
@@ -74,7 +73,7 @@
 
 
         <!-- JOBB FRA HER -->
-        <div class="tab-pane fade in show active" id="first">
+        <div class="tab-content" id="first">
             <div id="testing-content">
 
                 <div class="row">
@@ -92,7 +91,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 btn-div">
-                        <button type="button" id="changetabbutton2" class="btn btn-primary">Book <i class="fas fa-arrow-right"></i></button>
+                        <button type="button" id="" class="btn btn-primary">Book <i class="fas fa-arrow-right"></i></button>
                     </div>
                 </div>
 
@@ -152,7 +151,7 @@
 
 
 
-        <div class="tab-pane fade" id="second">
+        <div class="tab-content d-none" id="second">
             <h2 class="h2-margin text-center">Velg dato i kalenderen, og velg klokkeslett for booking.</h2>
             <div id="alt">
                 <h1 id="valgtTjeneste">Valgt Tjeneste</h1>
@@ -223,7 +222,7 @@
             <button type="button" id="backtabbutton1" class="btn btn-secondary"><i class="fas fa-arrow-left"></i>Tilbake</button>
         </div>
 
-         <div class="tab-pane fade" id="third">
+         <div class="tab-content d-none" id="third">
 
 
             <form class="form formkontakt" name="test" action="order-completed.html" onsubmit="return validateForm()">

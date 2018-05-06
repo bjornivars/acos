@@ -73,7 +73,46 @@ if (id) { // if there is an id, display the following information
 
 } // if id end
 
+var step = 1;
+var progress = 1;
 
 
+function nextStep() {
+    progress++;
+    console.log(progress);
+}
 
+function goToStep(step) {
+    switch (step){
+        case 1:
+            document.getElementById("first").classList.remove("d-none");
+            document.getElementById("second").classList.add("d-none");
+            document.getElementById("third").classList.add("d-none");
+            // console.log("kjøres?");
 
+            document.getElementById("tab1").classList.add("activeTab");
+            document.getElementById("tab2").classList.remove("activeTab");
+            document.getElementById("tab3").classList.remove("activeTab");
+
+            break;
+        case 2:
+            document.getElementById("first").classList.add("d-none");
+            document.getElementById("second").classList.remove("d-none");
+            document.getElementById("third").classList.add("d-none");
+
+            document.getElementById("tab1").classList.remove("activeTab");
+            document.getElementById("tab2").classList.add("activeTab");
+            document.getElementById("tab3").classList.remove("activeTab");
+
+            break;
+        case 3:
+            document.getElementById("first").classList.add("d-none");
+            document.getElementById("second").classList.add("d-none");
+            document.getElementById("third").classList.remove("d-none");
+
+            document.getElementById("tab1").classList.remove("activeTab");
+            document.getElementById("tab2").classList.remove("activeTab");
+            document.getElementById("tab3").classList.add("activeTab");
+            break
+    }
+}
