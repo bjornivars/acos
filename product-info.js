@@ -82,16 +82,18 @@ function nextStep(next) {
     goToStep(progress);
     console.log(progress);
 }
-
+console.log("something" + progress);
 
 function goToStep(step) {
+    console.log("something else" + step);
+
     switch (step){
         case 1:
             document.getElementById("first").classList.remove("d-none");
             document.getElementById("second").classList.add("d-none");
             document.getElementById("third").classList.add("d-none");
             document.getElementById("fourth").classList.add("d-none");
-            // console.log("kjøres?");
+            console.log("kjøres?");
 
             document.getElementById("tab1").classList.add("activeTab");
             document.getElementById("tab2").classList.remove("activeTab");

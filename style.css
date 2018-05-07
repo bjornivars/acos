@@ -310,6 +310,9 @@ a.active.show{
     .ghost-large{
         display: block;
     }
+    .nav-nowrap{
+         flex-wrap: nowrap;
+    }
 }
 
 
@@ -323,25 +326,65 @@ a.active.show{
 
 
 /* @@@@@@@@@@@@@@@@@@@ product info @@@@@@@@@@@@@@@@@@@ */
-
+/* TODO: ask if this is okay or fix ask for help */
 .li-style-tab-product{
     background-color: transparent;
     padding: 5px 5px 5px 5px;
     width: 100%;
     text-align: center;
-    border: 1px solid black;
-    border-radius: 5px 5px 0px 0px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+
+    border-radius: 0px 0px 0px 0px;
+}
+.li-style-tab-product:not(:last-child):before{
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 20px solid #aaa;
+    position: absolute;
+    top: 0%;
+    margin-top: 0px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 3;
 
 }
-li-style-tab-product:hover{
-    color: white;
-    text-decoration: none;
+
+.li-style-tab-product:not(:last-child):after{
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    top: 0%;
+    margin-top: 0px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 3;
+
+}
+
+.li-style-tab-product:first-child{
+
+    border-left: 1px solid black;
+
+}
+.li-style-tab-product:last-child {
+    border-right: 1px solid black;
 }
 
 
-li-style-tab-product:focus{
-    background-color: yellow;    text-decoration: none;
-}
+
+
+
+
 
 form {
     width: 100%;
