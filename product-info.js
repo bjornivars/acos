@@ -57,7 +57,7 @@ if (id) { // if there is an id, display the following information
 
 
             var lng = response.location.split(",")[1];
-            console.log(lng);
+            // console.log(lng);
             var lat = response.location.split(",")[0];
             var pos = {lat: Number(lat), lng: Number(lng)};
             myMap.setCenter(pos);
@@ -80,20 +80,17 @@ var progress = 1;
 function nextStep(next) {
     progress = next;
     goToStep(progress);
-    console.log(progress);
+    // console.log(progress);
 }
-console.log("something" + progress);
 
 function goToStep(step) {
-    console.log("something else" + step);
 
     switch (step){
         case 1:
             document.getElementById("first").classList.remove("d-none");
             document.getElementById("second").classList.add("d-none");
             document.getElementById("third").classList.add("d-none");
-            document.getElementById("fourth").classList.add("d-none");
-            console.log("kjøres?");
+
 
             document.getElementById("tab1").classList.add("activeTab");
             document.getElementById("tab2").classList.remove("activeTab");
