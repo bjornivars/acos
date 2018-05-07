@@ -155,3 +155,19 @@ fetch("https://api.urbanapp.no/v1/venues/near/49.616673/6.128208/12/age/99/") //
     window.localStorage.setItem("liste",JSON.stringify(list));
 
     });
+
+
+function toggleFilter(div) {
+    var x = document.getElementById(div + "filter");
+    var y = document.getElementById(div + "Button").firstChild;
+
+    if (x.style.display === "block") {
+        x.style.display = "none";
+        y.data = "Show filter"
+    } else {
+        x.style.display = "block";
+        y.data = "Hide filter";
+    }
+
+
+}

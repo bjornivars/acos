@@ -229,6 +229,12 @@ a.active.show{
     display: none;
 }
 
+.ghost-large{
+    display: none;
+}
+
+
+
 
 /* Small devices (landscape phones, less than 768px) */
 @media (min-width: 768px) and (max-width: 1000px) {
@@ -279,7 +285,7 @@ a.active.show{
     }
 
     .nav-item{
-        width: 51%;
+        width: 50%;
     }
     
 
@@ -290,6 +296,20 @@ a.active.show{
    .verdana {
        margin-top: 1em;
    }
+
+   .h3-style{
+       font-size: 1.4rem;
+   }
+    .ghost-mobile {
+        display: none;
+    }
+    .navbar{
+        margin-bottom: 1.5em;
+    }
+
+    .ghost-large{
+        display: block;
+    }
 }
 
 
@@ -327,4 +347,8 @@ form {
     width: 100%;
 }
 
-
+@media only screen and (max-width: 372px){
+    .h3-style{
+        font-size: 1rem;
+    }
+}
