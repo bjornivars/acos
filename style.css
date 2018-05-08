@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, lightgreen, lightblue);
+    background: linear-gradient( #B2DAE6, #F9FAE1);
     line-height: 1.5;
     font-family: "Palation", Arial, Helvetica, sans-serif;
 
@@ -52,6 +52,9 @@ a:hover{
 
 }
 
+.span-font-size{
+    font-size: 1.3rem;
+}
 
 .tab-content{
     width: 100%;

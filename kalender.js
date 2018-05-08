@@ -145,7 +145,7 @@ function buildMonth(){
 		}
 	}
 
-	fetch('Bookings.json')
+	fetch('bookings.json')
 .then(result=> result.json())
 .then((res) => {
 	Jsonloop(res.Bookings);

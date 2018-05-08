@@ -150,7 +150,7 @@ h1{
 
 }
 .bookinglomme{
-	border: solid black 1px;
+	border: solid whitesmoke 1px;
 	height: 80px;
 	display: flex;
 	flex-direction: row;
@@ -352,7 +352,7 @@ h1{
 
 }
 .bookinglomme{
-	border: solid black 1px;
+	border: solid whitesmoke 1px;
 	height: 80px;
 	display: flex;
 	flex-direction: row;
@@ -563,7 +563,7 @@ h1{
 
 }
 .bookinglomme{
-	border: solid black 1px;
+	border: solid whitesmoke 1px;
 	height: 80px;
 	display: flex;
 	flex-direction: row;
