@@ -161,12 +161,14 @@ function toggleFilter(div) {
     var x = document.getElementById(div + "filter");
     var y = document.getElementById(div + "Button").firstChild;
 
-    if (x.style.display === "block") {
+    if (x.style.display === "inline-flex") {
         x.style.display = "none";
-        y.data = "Show filter"
+        y.data = "Show filter";
+        console.log("Flex?");
     } else {
-        x.style.display = "block";
+        x.style.display = "inline-flex";
         y.data = "Hide filter";
+        console.log("pliiiis")
     }
 
 

@@ -10,9 +10,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous" defer></script>
-    <link rel="stylesheet" href="style.css">
+
     <script src="kvittering.js" defer></script>
     <link rel="stylesheet" type="text/css" href="Styles.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -36,9 +37,9 @@
 
         <!-- Nav tabs -->
         <div class="row">
-            <ul class="nav nav-tabs justify-content-around" id="mytabs" role="tablist">
+            <ul class="nav nav-nowrap nav-tabs justify-content-around" id="mytabs" role="tablist">
                 <li class="li-style-tab-product col-sm-3 col-md-3 ">
-                    <a href="#" id="tab1" class="tab btn activeTab" onclick="goToStep(1)">
+                    <a href="#" id="tab1" class="tab btn disabled" onclick="goToStep(1)">
                         <icon class="fa fa-home"></icon> <span class="ghost-mobile"> Lokale </span>
                     </a>
                 </li>
@@ -55,18 +56,18 @@
                 </li>
 
                 <li  class="li-style-tab-product col-sm-3 col-md-3">
-                    <a href="#" id="tab3" class="tab btn disabled" onclick="goToStep(4)">
+                    <a href="#" id="tab3" class="tab btn activeTab" onclick="goToStep(4)">
                         <i class="fas fa-check"></i> <span class="ghost-mobile"> Kvittering </span>
                     </a>
                 </li>
 
             </ul>
 
-
+        </div>
 
             <div class="tab-content " id="fourth">
                 <h2 class="h2-margin text-center">Kvittering</h2>
-                    <ul id="infoKvitt">
+                    <ul id="infoKvitt" class="ul-style">
 
                     </ul>
 
